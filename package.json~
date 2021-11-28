@@ -1,0 +1,22 @@
+{
+  "name": "whatsapp",
+  "version": "1.0.0",
+  "description": "Whatsapp console webhooks and callbacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applight/node-whatsapp.git"
+  },
+  "author": "Matt Vaughan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/applight/node-whatsapp/issues"
+  },
+  "homepage": "https://github.com/applight/node-whatsapp#readme",
+  "dependencies": {
+    "twilio": "^3.71.2"
+  }
+}
