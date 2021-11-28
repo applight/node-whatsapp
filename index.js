@@ -1,3 +1,4 @@
+const prims    = require('../prims.js')
 const process  = require('process')
 const http     = require('http')
 const express  = require('express')
@@ -15,6 +16,8 @@ app.use(express.urlencoded({
 app.post('/messageIn', (req, res) => {
     const body = req.body;
     console.log(" To " + body.To + " ** From " + body.From + " ** Body " + body.Body)
+    const input = { to: body.To, from: body.From, body: body.Body };
+    prims.asyncInsertMessage( input, prims.pool );
     res.send('Hello World!')
 })
 
